@@ -1,6 +1,9 @@
 #! /bin/bash
 mkdir build
 mkdir target
+# Copy some configuration files to the target folder
+# Use hard link to save some space - Should we change it to copy?
+ln asset/skin.ini target/skin.ini
 # Fetch some other files from the Internet
 # Konqi for ComboBurst and Scoreboard
 wget -O build/mascot_20130120_KDE_3_transparent.png http://www.heatwo.com/temp/mascot_20130120_KDE_3_transparent.png
