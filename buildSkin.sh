@@ -1,5 +1,4 @@
 #! /bin/bash
-mkdir target
 # Fetch some other files from the Internet
 # Konqi for ComboBurst and Scoreboard
 wget http://www.heatwo.com/temp/mascot_20130120_KDE_3_transparent.png
