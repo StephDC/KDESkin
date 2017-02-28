@@ -5,5 +5,5 @@ An update of the old osu! KDE Skin by StephDeChine (StephDC). Replace Oxygen ico
 Allow us to build the KDESkin.osk osu! skin file with a single execution of buildSkin.sh
 
 ## Dependency
-Bash - GNU Bourne-Again SHell, other POSIX compatible shell should also work.
-ImageMagick - Currently using ImageMagick 6 but might use 7 in the future.
+- Bash - GNU Bourne-Again SHell, other POSIX compatible shell should also work.
+- ImageMagick - Currently using ImageMagick 6 but might use 7 in the future.
