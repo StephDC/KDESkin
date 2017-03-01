@@ -24,6 +24,16 @@ convert build/konqi.png -resize 480x700 target/comboburst2.png
 convert build/konqi.png -resize 960x1400 target/comboburst2@2x.png
 convert build/853px-NewTux.svg.png -resize 480x700 target/comboburst3.png
 convert build/853px-NewTux.svg.png -resize 960x1400 target/comboburst3@2x.png
+
+# Make cursor
+convert -size 76x76 xc:transparent -fill blue -draw 'circle 38,38 38,9' -blur 7x7 -fill white -draw 'circle 38,38 38,25' -blur 3x3 -resize 50x50 target/cursor.png
+convert -size 152x152 xc:transparent -fill blue -draw 'circle 76,76 76,18' -blur 14x14 -fill white -draw 'circle 76,76 76,50' -blur 6x6 -resize 100x100 target/cursor@2x.png
+convert -size 76x76 xc:transparent -fill radial-gradient:cyan-transparent -draw 'circle 38,38 38,1' target/cursortrail.png
+convert -size 152x152 xc:transparent -fill radial-gradient:cyan-transparent -draw 'circle 76,76 76,1' target/cursortrail@2x.png
+
+# Make CatchTheBeat Fruits
+rsvg-convert breeze-icons/icons/apps/64/utilities-terminal.svg -w 128 -a -o target/fruit-grapes.png
+rsvg-convert breeze-icons/icons/apps/64/utilities-terminal.svg -w 128 -a -o target/fruit-grapes-overlay.png
 # convert katie.png -resize 480x700 target/comboburst1.png
 # convert katie.png -resize 960x1400 target/comboburst1@2x.png
 # Build the skin file
